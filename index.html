@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="py-4">
+      <div class="container">
+        <div class="logo"></div>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="move">
+        <div class="container">
+          <ul class="move__card list-unstyled row text-center"></ul>
+        </div>
+      </section>
+    </main>
+    <template class="card__template">
+      <li class="move__item text-center col-12 col-sm-6 col-lg-4 col-xl-3 mb-5">
+        <div class="card move__cards border-0 h-100 mx-auto">
+          <img src="" class="card-img-top img-thumbnail card__img" alt="..." />
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h4 class="card-title mb-2">Card title</h4>
+            <div
+              class="stars d-flex align-items-center justify-content-between mb-3"
+            >
+              <div class="star d-flex"></div>
+              <div class="stars__data d-flex"></div>
+              <div class="stars__time d-flex"></div>
+            </div>
+            <p class="card__text card-text fw-bold">Action, comedy , bek</p>
+            <button
+              type="button"
+              class="btn btn-primary card__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              More info
+            </button>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <!-- Modal -->
+    <div
+      class="modal fade card__modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title card__title h3 ms-4" id="exampleModalLabel">
+              Modal title
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="modal__inner row text-center mx-auto">
+              <iframe
+                class="ifram__card mx-auto col-12 col-md-6"
+                width="500"
+                height="400"
+                src=""
+              ></iframe>
+              <div class="stars__mod mb-3 mt-3 col-12 col-md-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="star__mod fw-bold"></div>
+                  <div class="data__mod fw-bold"></div>
+                  <div class="time__mod fw-bold"></div>
+                </div>
+                <p class="card__category mt-3"></p>
+                <p class="card__tect mt-2 lead"></p>
+
+                <a class="mdlink fs-5" href="" target="_blank">Show on IMDb</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
