@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/search.css">
     <title>Document</title>
   </head>
   <body>
     <header class="py-4">
       <div class="container">
         <div class="logo"></div>
+        <div class="search__bar">
+          <form action="" class="search-bar move__search" autocomplete="off">
+            <input class="search__input" type="search" name="search" pattern=".*\S.*" required>
+            <button class="search-btn" type="submit">
+              <span>Search</span>
+            </button>
+          </form>
+
+          <form class="form__cange" action="">
+            <select class="form__select" name="option">
+              <option class="form__option" value="All">All</option>
+             </select>
+          </form>
+
+        </div>
+
       </div>
     </header>
     <main class="site-main">
@@ -28,7 +45,7 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title mb-2">Card title</h4>
             <div
-              class="stars d-flex align-items-center justify-content-between mb-3"
+              class="stars d-flex align-items-center justify-content-between flex-wrap mb-3"
             >
               <div class="star d-flex"></div>
               <div class="stars__data d-flex"></div>
