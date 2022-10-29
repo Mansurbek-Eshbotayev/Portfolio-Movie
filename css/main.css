@@ -33,6 +33,7 @@ body {
     rgba(199, 120, 214, 0.8046568969384629) 100%,
     rgba(33, 216, 217, 1) 100%
   );
+  overflow-x: hidden;
 }
 
 .logo {
@@ -256,12 +257,130 @@ body {
   /* max-width: 350px; */
 }
 
+.boock__btn{
+  right: 25px;
+  bottom: 90px;
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  display: inline;
+  background-color: transparent;
+  background-image: url(../img/down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+
+.open__btn{
+  /* position: absolute; */
+  position: fixed; 
+  right: 100px;
+  top: 200px;
+  background-color: transparent;
+}
+
+.open__img{
+  width: 24px;
+  height: 24px;
+}
+
+.bookmark__list{
+  width: 100%;
+  max-width: 320px;
+
+  max-height: 410px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  position: fixed;  
+  right: -350px;
+  top: 330px;
+  padding: 20px;
+  transition: all 1s ease;
+  border-radius: 8px;
+  background: linear-gradient(0deg, rgb(246, 239, 239) 0%, rgba(29, 69, 170, 0.831) 100%, rgba(186, 186, 226, 0.973) 100%);
+  overflow-y: scroll;
+}
+
+.bookmark__list--on{
+  right: 91px;
+  top: 330px;
+  transition: all 1s ease;
+}
+
+.book__Card{
+  margin-bottom: 20px;
+}
+
+.book__ittle{
+  font-size: 23px;
+  font-weight: 35px;
+}
+
+.count__bage{
+  top: -2px;
+  /* right: 0px; */
+  font-size: 12px;
+}
+
+.del__btn{
+  padding: 5px 10px;
+  background-color: rgb(226, 85, 85);
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.search__input{
+  width: 150px;
+}
+
+.dark{
+  background-color: dimgrey;
+}
+
+.form__select{
+  height: 65px !important;
+  padding-left: 10px;
+}
+
+
 @media only screen and (min-width: 576px) {
   .card {
     width: 100%;
     max-width: 250px;
   }
 }
+
+@media only screen and (max-width: 560px) {
+  .form__select,
+  .search-bar input:focus,
+  .search-bar input:valid {
+    /* background: #fff; */
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .open__btn{
+
+    right: 10px;
+    top: 213px;
+  }
+
+  .bookmark__list--on {
+    max-width: 300px;
+    right: 17px;
+  }
+
+  .bookmark__list--on {
+    max-width: 280px;
+    right: 11px;
+}
+}
+
 
 @media only screen and (min-width: 772px) {
   .card {
@@ -280,3 +399,10 @@ body {
     width: 280px;
   }
 } ;
+/* 
+@media only screen and (min-width: 1200px) {
+  .form__select,
+  .search-bar input:focus,
+  .search-bar input:valid {
+    /* background: #fff; */
+

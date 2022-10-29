@@ -14,17 +14,42 @@
       <div class="container">
         <div class="logo"></div>
         <div class="search__bar">
-          <form action="" class="search-bar move__search" autocomplete="off">
+          <!-- <form action="" class="search-bar move__search" autocomplete="off">
             <input class="search__input" type="search" name="search" pattern=".*\S.*" required>
             <button class="search-btn" type="submit">
               <span>Search</span>
             </button>
-          </form>
+          </form> -->
 
-          <form class="form__cange" action="">
-            <select class="form__select" name="option">
+          <form class="form__cange search-bar d-flex flex-wrap" action="">
+
+            <input class="search__input me-5 mb-3" type="search" name="search" pattern=".*\S.*" placeholder="search" >
+            
+
+            <select class="form__select form-selected me-3 ps-2" name="option">
               <option class="form__option" value="All">All</option>
              </select>
+
+             <input class="start__year me-4" type="number" name="start_year" aria-label="Entr start year" placeholder="Entr Start Year">
+
+             <input class="end__year me-3 mb-3" type="number" name="end_year" aria-label="Entr end year" placeholder="Entr End Year">
+
+             <select class="form__select form__sort  mb-3  xxl-mt-0 h-100" name="option">
+              <option class="sort__option" value="a-z">A-Z</option>
+              <option class="sort__option" value="z-a">Z-A</option>
+              <option class="sort__option" value="r-high">Reating to High</option>
+              <option class="sort__option" value="r-low">Reating to Low</option>
+              <option class="sort__option" value="year-old">Year (old to New)</option>
+              <option class="sort__option" value="year-new">Year (New to Old)</option>
+              
+              
+             </select>
+
+             <div class="wrap d-block w-100 d-flex justify-content-center">
+              <button class="form__btn btn btn-primary ">
+                Go
+               </button>
+             </div>
           </form>
 
         </div>
@@ -35,6 +60,17 @@
       <section class="move">
         <div class="container">
           <ul class="move__card list-unstyled row text-center"></ul>
+          <ul class="bookmark__list">Your Films</ul>
+          <button class="open__btn">
+            <span type="button" class=" position-relative ">
+              <img class="open__img" src="./img/down.png" alt="">
+              <span class="position-absolute  start-100 translate-middle badge rounded-pill bg-danger count__bage">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </span>
+          </button>
+          
         </div>
       </section>
     </main>
@@ -52,6 +88,9 @@
               <div class="stars__time d-flex"></div>
             </div>
             <p class="card__text card-text fw-bold">Action, comedy , bek</p>
+            <button class="boock__btn" type="button">
+              <!-- <img class="bookmark" src="./img/down.png" alt="boockmark"> -->
+            </button>
             <button
               type="button"
               class="btn btn-primary card__btn"
@@ -116,8 +155,11 @@
       </div>
     </div>
 
+   
+
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/movies.js"></script>
+    <script src="./js/./normalizemovieslist.js"></script>
+    <!-- <script src="./js/movies.js"></script> -->
     <script src="./js/main.js"></script>
   </body>
 </html>

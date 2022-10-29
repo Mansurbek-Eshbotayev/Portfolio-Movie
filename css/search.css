@@ -51,7 +51,7 @@ body, button, input {
 }
 .search-bar input {
 	background: transparent;
-	border-radius: 1.5em;
+	border-radius: 5px;
 	box-shadow: 0 0 0 0.4em #171717 inset;
 	padding: 0.75em;
 	transform: translate(0.5em,0.5em) scale(0.5);
@@ -63,15 +63,21 @@ body, button, input {
 .search-bar input::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
+.form__select,
 .search-bar input:focus,
 .search-bar input:valid {
 	/* background: #fff; */
-	border-radius: 0.375em 0 0 0.375em;
+	width: 180px;
   border-color: #474c5a;
+	border-radius: 5px;
 	box-shadow: 0 0 0 0.1em #d9d9d9 inset;
 	transform: scale(1);
   background: rgb(246,239,239);
 background: linear-gradient(0deg, rgba(246,239,239,0.8914916308320203) 0%, rgba(29,70,170,0.40129555240064774) 100%, rgba(186,186,226,0.8802871490393032) 100%);
+}
+
+.form__select:focus{
+	outline: none;
 }
 .search-btn {
 	background: #171717;
